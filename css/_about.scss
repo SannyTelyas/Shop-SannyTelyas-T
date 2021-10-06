@@ -1,0 +1,98 @@
+body {
+    main {
+        
+       // margin: 30px auto;
+        .first {
+            color: red;
+        }
+        .story {
+            padding: 20px ;
+            border: black solid 4px;
+            box-sizing: border-box;
+            border-radius: 20px;
+            width: 80%;
+            margin: 0 auto;
+            text-align: right; ////////הוספתי הצמדה לימין
+        }
+        .map {
+            margin: 40px auto;
+            display: inline-block;
+        }
+        .ssss {
+            width: 320px;
+            height: 320px;
+            margin: 0 auto;
+        }
+        .card {
+            display: inline-block;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            max-width: 300px;
+            margin: 10px 20px 30px auto;
+            text-align: center;
+    
+            .tt {
+                color: grey;
+                font-size: 18px;
+            }
+           
+            button {
+                border: none;
+                outline: 0;
+                display: block;
+                padding: 8px;
+                color: white;
+                background-color: #00ff0d;
+                text-align: center;
+                cursor: pointer;
+                width: 100%;
+                font-size: 18px;
+                :hover {
+                    opacity: 0.7;
+                }
+            }
+            a {
+                text-decoration: none;
+                font-size: 22px;
+                color: black;
+                :hover {
+                    opacity: 0.7;
+                }
+              }
+            button:hover , a:hover {
+                opacity: 0.7;
+            }
+            
+        }
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    body {
+
+        main {
+            margin: 150px auto;
+            #first {
+                display: none;
+                font-size: 80px;
+                margin: 300px auto;
+               
+            }
+            .title {
+                
+                margin: 130px auto;
+            }
+            .story {
+                width: 900px;
+                border: none;
+                margin: 0 auto;
+                
+                
+            }
+            .map{
+                margin: 40px auto;
+                
+            }
+        }
+
+    }
+}

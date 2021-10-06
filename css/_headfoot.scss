@@ -1,0 +1,700 @@
+@import "var";
+
+body {
+    position: relative;
+
+
+    header {
+        // margin: -8px -8px 10px -8px;
+        min-height: 80px;
+        width: 100%;
+        background-color: white;
+        //position: unset;
+        top: 0;
+        // transition: all 0.5s;
+        z-index: 9;
+
+        .headm {
+            width: 100%;
+            background-color: $green;
+            // padding: 5px 0px;
+            //border-radius: 30px;
+            min-height: 60px;
+            position: fixed;
+            //margin: -2px auto;
+            top: 0px;
+            transition: all 0.3s;
+            z-index: 8;
+        }
+
+        .head {
+            width: 200px;
+            height: 60px;
+            margin: 0px auto;
+            text-align: center;
+
+            #lightright {
+                width: 30px;
+                float: right;
+                height: 60px;
+                margin: 10px auto 0px;
+
+                // grid-area: "d3";
+                img {
+                    width: 30px;
+                }
+            }
+
+            #lightleft {
+                width: 30px;
+                float: left;
+                height: 60px;
+                margin: 10px auto 0px;
+
+                //  grid-area: "d1";
+                img {
+                    width: 30px;
+                    transform: scaleX(-1);
+                }
+            }
+
+            h2 {
+                margin: 10px auto 2px;
+                //  padding: 15px 0px 0px;
+                font-size: 15px;
+                display: inline-block;
+                // grid-area: "d2";
+            }
+
+            #logocast {
+                font-size: 12px;
+                text-decoration: underline;
+                font-family: 'Times New Roman', Times, serif;
+                // display: block;
+                //width: 90px;
+                //margin: 0px auto;
+                background-color: yellow;
+                // grid-area: "d4";
+            }
+        }
+
+        .phoneadd {
+            display: none;
+        }
+
+        .menu {
+            float: right;
+            height: 40px;
+            width: 40px;
+            margin: 10px 15px 15px 5px;
+            position: relative;
+
+            .dropbtn {
+                padding: 0px;
+                height: 40px;
+                width: 40px;
+                border-radius: 60px;
+                border: none;
+                background-color: white;
+                transition: all 1s;
+                transform: rotate(0deg);
+
+                img {
+                    width: 40px;
+                }
+
+            }
+
+            .dropbtn:hover img {
+                transform: scale(1.1) rotate(-90deg);
+                opacity: 0.9;
+                transition: all 1s;
+            }
+
+            .fmenu {
+                display: none;
+                position: absolute;
+                background-color: #f9f9f9;
+                min-width: 160px;
+                //overflow: auto;
+                box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+
+                a {
+                    color: black;
+                    padding: 12px 16px;
+                    text-decoration: none;
+                    display: block;
+                }
+            }
+
+            .fmenu a:hover {
+                background-color: #dbdada
+            }
+
+            .show {
+                display: block;
+            }
+        }
+
+        #contac {
+            float: left;
+            height: 40px;
+            width: 40px;
+            border-radius: 50px;
+            background-color: white;
+            margin: 10px 5px 15px 15px;
+            transition: all 1s;
+
+            img {
+                margin: 3px auto;
+                width: 40px;
+            }
+        }
+
+        #contac:hover {
+            transform: scale(1.1);
+            opacity: 0.9;
+            transition: all 1s;
+
+            img {
+                // margin: -10px;
+                transform: scale(1.1);
+                opacity: 0.9;
+                transition: all 1s;
+            }
+        }
+
+
+    }
+
+    footer {
+        max-width: 100%;
+        background-color: $green;
+        margin: auto;
+        // border-radius: 30px;
+        height: 60px;
+        position: static;
+        bottom: 10px;
+
+        #paymentfooter {
+            display: none;
+
+            // p {
+            //     margin: -6px 0;
+            //     font-size: 13px;
+            //     font-family: cursive;
+            // }
+        }
+
+        .footerlinks {
+           // display: inline-block;
+            float: right;
+            // width: 30%;
+            height: 100%;
+            text-align: right;
+            // font-size: 14px;
+
+
+            a p {
+                margin: 5px 5px;
+                padding: 0 15px 0 0;
+                font-size: 10px;
+                font-weight: bold;
+
+            }
+        }
+
+        .footerlinks2 {
+            display: none;
+            float: right;
+            // width: 30%;
+            height: 100%;
+            text-align: right;
+            font-size: 14px;
+
+
+            a p {
+                margin: 5px 5px;
+                padding: 0 15px 0 0;
+
+            }
+        }
+
+        .footerlinks3 {
+            display: none;
+            float: right;
+            // width: 30%;
+            height: 100%;
+            text-align: right;
+            font-size: 14px;
+
+
+            a p {
+                margin: 5px 5px;
+                padding: 0 15px 0 0;
+                
+            }
+        }
+
+        #socialmediafooter {
+           // display: inline-block;
+            float: left;
+            margin: 0 0 0 10px;
+        }
+
+        .footerHours {
+            display: none;
+        }
+
+        .fa {
+            padding: 10px 1px;
+            font-size: 20px;
+            width: 40px;
+            text-align: center;
+            text-decoration: none;
+            margin: 10px 2px 5px;
+            border-radius: 50px;
+        }
+
+        .fa:hover {
+            opacity: 0.7;
+        }
+
+        .fa-facebook {
+            background: #3B5998;
+            color: white;
+        }
+
+        .fa-google {
+            background: #dd4b39;
+            color: white;
+        }
+
+        .fa-youtube {
+            background: #bb0000;
+            color: white;
+        }
+
+        .fa-whatsapp {
+            background: green;
+            color: white;
+        }
+    }
+
+    .show {
+        display: block;
+    }
+
+    #socialmediatop {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 320px) {
+    header {
+
+        .headm {
+            height: 60px;
+        }
+    }
+}
+
+@media only screen and (min-width: 430px) {
+    body {
+        footer {
+            .footerHours {
+                display: inline-block;
+                text-align: right;
+                max-width: 170px;
+                font-size: 10px;
+
+
+                p {
+                    // margin: 5px 0 0;
+                    font-weight: bold;
+                    text-align: center;
+                    margin: 5px 0;
+
+                }
+            }
+        }
+
+    }
+
+    @media only screen and (min-width: 600px) {
+        body {
+            header {
+
+                .headm {
+                    height: 60px;
+                }
+
+
+                .head {
+                    .phoneadd {
+                        display: block;
+                        text-decoration: none;
+                        font-size: 15px;
+                        font-family: 'Times New Roman', Times, serif;
+                        position: relative;
+                        left: 170px;
+                        top: -37px;
+
+                        p {
+                            margin: 0;
+
+                        }
+
+
+                    }
+                }
+
+                #socialmediatop {
+                  //  display: inline-block;
+                    float: left;
+                    position: relative;
+                    display: flex;
+                    left: -153px;
+                    top: -60px;
+
+
+                    .fa {
+                        padding: 10px 1px;
+                        font-size: 20px;
+                        width: 40px;
+                        text-align: center;
+                        text-decoration: none;
+                        margin: 10px 2px;
+                        border-radius: 50px;
+                    }
+
+                    .fa:hover {
+                        opacity: 0.7;
+                    }
+
+                    .fa-facebook {
+                        background: #3B5998;
+                        color: white;
+                    }
+
+                    .fa-google {
+                        background: #dd4b39;
+                        color: white;
+                    }
+
+                    .fa-youtube {
+                        background: #bb0000;
+                        color: white;
+                        display: none;
+                    }
+
+                    .fa-whatsapp {
+                        background: green;
+                        color: white;
+                        display: none;
+                    }
+                }
+
+
+
+            }
+
+            //////////////////////////////////////////
+            footer {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+
+                .footerlinksflex {
+                    width: 16%;
+                }
+
+                .socialmediafooter {
+                    width: 40%
+                }
+
+                #paymentfooter {
+                    display: inline-block;
+                    font-size: 13px;
+                    max-width: 143px;
+                    width: 24%;
+
+                    p {
+                        margin: -6px 0;
+                        //font-size: 13px;
+                        font-family: cursive;
+                        display: inline;
+                    }
+
+                    .fa {
+                        font-size: 15px;
+                        width: 30px;
+                        height: 30px;
+                        padding: 9px 1px 0px 0;
+                        margin: 5px 2px;
+                    }
+                }
+
+                .footerHours {
+                    display: inline-block;
+                    text-align: right;
+                    max-width: 170px;
+                    font-size: 10px;
+                    width: 25%;
+
+                    p {
+                        // margin: 5px 0 0;
+                        font-weight: bold;
+                        text-align: center;
+                        margin: 5px 0;
+
+                    }
+                }
+
+
+                .fa-cc-visa {
+                    color: navy;
+                    background-color: white;
+                }
+
+                .fa-cc-mastercard {
+                    color: red;
+                    background-color: white;
+                }
+
+                .fa-cc-paypal {
+                    color: navy;
+                    background-color: white;
+                }
+            }
+        }
+    }
+}
+
+
+
+////////////////////////////////////////////////////////
+
+@media only screen and (min-width: 900px) {
+
+    body {
+
+        header {
+            height: 105px;
+            position: fixed;
+            // transition: all 1s;
+
+            #socialmediatop {
+               // display: inline-block;
+                float: left;
+                position: relative;
+                // display: flex;
+                left: 100px;
+                top: -60px;
+
+                .fa-youtube {
+                    display: inline-block;
+                }
+
+                .fa-whatsapp {
+                    display: inline-block;
+                }
+
+                .fa {
+                    padding: 10px 1px;
+                    font-size: 20px;
+                    width: 40px;
+                    text-align: center;
+                    text-decoration: none;
+                    margin: 10px 2px;
+                    border-radius: 50px;
+                }
+
+            }
+
+
+            .headm {
+                height: 90px;
+                border-radius: 50px;
+                width: 95%;
+                margin: 10px auto;
+                position: relative;
+            }
+
+            .menu {
+                #menuBtn {
+                    display: none;
+                }
+
+                .fmenu {
+                    display: flex;
+                    flex-direction: row;
+                    min-width: 310px;
+                    height: 100px;
+                    position: unset;
+                    background-color: unset;
+                    box-shadow: unset;
+                    min-height: 50px;
+                    margin: -15px 0;
+                    padding: 15px 0;
+
+                    a {
+                        padding: 3px 0px;
+                    }
+
+                    .dropmenubig {
+                       // display: inline-block;
+                        width: 60px;
+                        height: 60px;
+                        background-color: white;
+                        border-radius: 50px;
+                        float: right;
+                        margin: 5px;
+
+                        &:hover {
+                            background-color: cadetblue;
+                            opacity: 0.9;
+                            transform: scale(1.2);
+                            font-weight: bold;
+
+                            a:hover {
+                                background-color: unset;
+                            }
+                        }
+                    }
+
+
+                }
+            }
+
+
+
+            .head {
+                transform: scale(1.5);
+                padding: 5px 0px;
+                height: 84%;
+
+
+                .phoneadd {
+                    display: block;
+                    text-decoration: none;
+                    font-size: 12px;
+                    font-family: 'Times New Roman', Times, serif;
+                    position: unset;
+
+                    p {
+                        display: inline-block;
+                    }
+                }
+
+                #logocast {
+                    width: 90px;
+                    margin: 0px auto;
+                    background-color: yellow;
+
+                }
+            }
+
+            #contac {
+                transform: scale(1.5);
+                position: relative;
+                top: 10px;
+                left: 10px;
+            }
+        }
+
+
+        //////////////////////////////////////////////////
+
+        footer {
+            height: 100px;
+            width: 100%;
+            margin: 0 0 10px 0;
+            padding: 10px 0 0;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            #socialmediafooter {
+                width: 21%;
+                height: 100%;
+                max-width: 180px;
+
+                a {
+                    margin: 20px 0;
+                }
+            }
+
+            #paymentfooter {
+                display: inline-block;
+                width: 17%;
+                max-width: 160px;
+
+                .fa {
+                    padding: 10px 1px;
+                    font-size: 20px;
+                    width: 40px;
+                    height: 40px;
+                    text-align: center;
+                    text-decoration: none;
+                    margin: 10px 2px;
+                    border-radius: 50px;
+                }
+
+                p {
+
+                    margin: -6px 0;
+                    font-size: 13px;
+                    font-family: cursive;
+                }
+            }
+
+            .footerlinksflex {
+                width: 38%;
+                justify-content: space-between;
+
+                a p {
+                    font-size: 14px;
+                }
+            }
+
+            .footerlinks {
+                width: 40%;
+                a p{font-weight: bold;}
+            }
+
+            .footerlinks2 {
+                display: inline-block;
+                width: 30%;
+                a p{font-weight: bold;}
+            }
+
+            .footerlinks3 {
+                display: inline-block;
+                width: 30%;
+                a p{font-weight: bold;}
+            }
+
+            .footerHours {
+                display: inline-block;
+                text-align: right;
+                max-width: 200px;
+                width: 25%;
+                font-size: 13px;
+                padding: 10px 0 0;
+
+
+                p {
+                    margin: 5px 0 0;
+                    font-weight: bold;
+                    text-align: center;
+
+                }
+
+                ul {
+                    margin: 5px;
+                }
+            }
+        }
+    }
+}
